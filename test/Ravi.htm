@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes" />
+<title>HSPCB</title>
+
+<link rel="icon" type="image/jpeg" href="css/images/hspcb.jpg" />
+
+<!-- aria, classic, crisp, crisp-touch, gray, neptune, neptune-touch, triton -->
+<link rel="stylesheet" type="text/css" href="extjs/theme-classic/theme-classic-all.css" />
+<script type="text/javascript" src="extjs/ext-all.js"></script>
+<script type="text/javascript" src="extjs/theme-classic/theme-classic.js"></script>
+
+<link rel="stylesheet" type="text/css" href="leaflet/leaflet.css" />
+<script type="text/javascript" src="leaflet/leaflet.js"></script>
+
+<script type="text/javascript" src="leaflet/esri-leaflet.js"></script>
+<script type="text/javascript" src="leaflet/esri-leaflet-vector.js"></script>
+
+<link rel="stylesheet" type="text/css" href="leaflet/MousePosition.css" />
+<script type="text/javascript" src="leaflet/MousePosition.js"></script>
+
+<link rel="stylesheet" type="text/css" href="leaflet/MarkerCluster.css" />
+<link rel="stylesheet" type="text/css" href="leaflet/MarkerCluster.Default.css" />
+<script type="text/javascript" src="leaflet/leaflet.markercluster.js"></script>
+
+<script type="text/javascript" src="leaflet/Leaflet.GoogleMutant.js"></script>
+
+<script type="text/javascript" src="data/Districts.js"></script>
+<script type="text/javascript" src="data/Ambala.js"></script>
+<script type="text/javascript" src="data/All_STP.js"></script>
+<script type="text/javascript" src="data/HSPCB_WQ_Point.js"></script>
+<script type="text/javascript" src="data/drain.js"></script>
+<script type="text/javascript" src="data/Village.js"></script>
+<script type="text/javascript" src="data/Block.js"></script>
+<script type="text/javascript" src="data/river.js"></script>
+<script type="text/javascript" src="data/Kaithal.js"></script>
+<script type="text/javascript" src="data/Kuk.js"></script>
+<script type="text/javascript" src="data/Panchkula.js"></script>
+<script type="text/javascript" src="data/Panipat.js"></script>
+<script type="text/javascript" src="data/Panipat2.js"></script>
+<script type="text/javascript" src="data/Rewari.js"></script>
+<script type="text/javascript" src="data/Yamunanagar.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<script type="text/javascript" src="js/index.js"></script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2cWsEuUMqEAmSJbPFEYJBcSBKMdrXFpw"></script>
+
+</head>
+<body>
+<div id="banner" class="x-hidden">
+	<table width="100%">
+	<tr>
+	<td>
+	<a title="Haryana State Pollution Control Board (HSPCB)" target="_blank" href="http://hspcb.gov.in">
+	<img alt="HSPCB" title="HSPCB" align="middle" height="75" width="75" src="images/hspcb.jpg" />	
+	</a>
+	</td>
+	<td width="100%" style="color:#1a0000;background:#096c00 url(images/forest.jpg)">
+	<h1>Haryana State Pollution Control Board (HSPCB)</h1>
+	</td>
+	<td>
+	<a target="_blank" href="https://en.wikipedia.org/wiki/File:ConstellationGPS.gif">
+	<img alt="" title="" align="middle" height="75" src="images/ConstellationGPS.gif" />
+	</td>
+	</tr>
+	</table>
+</div>
+<div id="help" class="x-hidden">
+	<h3>Marker Clusters</h3>
+	<ul>
+	<li>Mouse over a cluster to see the bounds of its children & click a cluster to zoom to those bounds.</li>
+	<li> xsbdfyu hsgd hfsj </li>
+	</ul>
+	<h3>Dummy</h3>
+	<ul>
+	<li>Dummy.</li>
+	</ul>
+<div align='Bottem'><a href='http://www.hit-counter-html-code.com'><img src='http://hit-counter-html-code.com/wp-content/themes/customizr/hitcounter/c.php?d=9&id=162945&s=20' border='0' title='Web Design Orange County'></a><br / ><small><a href='http://www.hit-counter-html-code.com' title="Web Design Orange County">Web Design Orange County</a></small></div>
+</div>
+
+<script language=JavaScript>
+<!--
+
+//Disable right mouse click Script
+//By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
+//For full source code, visit http://www.dynamicdrive.com
+
+var message="Haryana State Pollution Control Board";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+// --> 
+</script>
+</body>
+</html>

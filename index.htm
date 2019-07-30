@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes" />
+<title>HSPCB-GIS CELL</title>
+<link rel="icon" type="image/jpeg" href="css/images/hspcb.jpg" />
+<!-- aria, classic, crisp, crisp-touch, gray, neptune, neptune-touch, triton -->
+<link rel="stylesheet" type="text/css" href="extjs/theme-classic/theme-classic-all.css" />
+<script type="text/javascript" src="extjs/ext-all.js"></script>
+<script type="text/javascript" src="extjs/theme-classic/theme-classic.js"></script>
+<link rel="stylesheet" type="text/css" href="leaflet/leaflet.css" />
+<script type="text/javascript" src="leaflet/leaflet.js"></script>
+<link rel="stylesheet" type="text/css" href="leaflet/leaflet.measure.css" />
+<!-- lEAFLET STAR -->
+<script type="text/javascript" src="leaflet/leaflet.measure.js"></script>
+<script type="text/javascript" src="leaflet/esri-leaflet.js"></script>
+<!-- LEAFLET  -->
+<script type="text/javascript" src="leaflet/esri-leaflet-vector.js"></script>
+<link rel="stylesheet" type="text/css" href="leaflet/MousePosition.css" />
+<script type="text/javascript" src="leaflet/MousePosition.js"></script>
+<link rel="stylesheet" type="text/css" href="leaflet/leaflet.zoomhome.css" />
+<link rel="stylesheet" type="text/css" href="leaflet/leaflet.zoomhome.js"/>
+<link rel="stylesheet" type="text/css" href="leaflet/leaflet.zoomhome.min.js"/>
+<link rel="stylesheet" type="text/css" href="leaflet/MarkerCluster.css" />
+<link rel="stylesheet" type="text/css" href="leaflet/MarkerCluster.Default.css"/>
+<script type="text/javascript" src="data/bmw.js"></script>
+<script type="text/javascript" src="data/bhiwani.js"></script>
+<!-- <script type="text/javascript" src="data/am.js"></script>  -->
+<script type="text/javascript" src="data/ambala.js"></script>
+<script type="text/javascript" src="data/ambala1.js"></script>
+<script type="text/javascript" src="data/Balabgarh1.js"></script>
+<script type="text/javascript" src="data/Bhatta.js"></script>
+<script type="text/javascript" src="data/Bhiwani1.js"></script>
+<script type="text/javascript" src="data/Faridabad1.js"></script>
+<script type="text/javascript" src="data/Fatehabad1.js"></script>
+<script type="text/javascript" src="data/Gurugram_North.js"></script>
+<script type="text/javascript" src="data/Gurugram_South.js"></script>
+<script type="text/javascript" src="data/Hisar1.js"></script>
+<script type="text/javascript" src="data/Jhajjar1.js"></script>
+<script type="text/javascript" src="data/Jind1.js"></script>
+<!-- <script type="text/javascript" src="data/Kaithal1.js"></script> -->
+<script type="text/javascript" src="data/Karnal1.js"></script>
+<script type="text/javascript" src="data/Mahendergarh1.js"></script>
+<script type="text/javascript" src="data/Mewat1.js"></script>
+<script type="text/javascript" src="data/Palwal1.js"></script>
+<script type="text/javascript" src="data/Panchkula1.js"></script>
+<script type="text/javascript" src="data/Panipat1.js"></script>
+<script type="text/javascript" src="data/Rewari1.js"></script>
+<script type="text/javascript" src="data/Rohtak1.js"></script>
+<script type="text/javascript" src="data/Sirsa1.js"></script>
+<script type="text/javascript" src="data/Sonipat1.js"></script>
+<script type="text/javascript" src="data/Yamunanagar1.js"></script>
+<script type="text/javascript" src="data/cate.js"></script>
+<script type="text/javascript" src="data/mdd.js"></script>
+<script type="text/javascript" src="data/mm.js"></script>
+<script type="text/javascript" src="data/d.js"></script>
+<script type="text/javascript" src="data/dd.js"></script>
+<script type="text/javascript" src="data/dr.js"></script>
+<script type="text/javascript" src="data/stp_m.js"></script>
+<script type="text/javascript" src="data/stpy.js"></script>
+<script type="text/javascript" src="data/drg.js"></script>
+<script type="text/javascript" src="data/drainy.js"></script>
+<script type="text/javascript" src="data/fatehabad.js"></script>
+<script type="text/javascript" src="data/hisar.js"></script>
+<!-- <script type="text/javascript" src="data/hspcb.js"></script> -->
+<script type="text/javascript" src="data/Panch.js"></script>
+<script type="text/javascript" src="data/panipat.js"></script>
+<script type="text/javascript" src="data/Rewari.js"></script>
+<script type="text/javascript" src="data/reg.js"></script>
+<script type="text/javascript" src="data/river.js"></script>
+<script type="text/javascript" src="data/Rohtak.js"></script>
+<script type="text/javascript" src="data/stp.js"></script>
+<script type="text/javascript" src="data/tt.js"></script>
+<script type="text/javascript" src="data/kl.js"></script>
+<script type="text/javascript" src="data/kai.js"></script>
+<script type="text/javascript" src="data/kf.js"></script>
+<script type="text/javascript" src="data/Village.js"></script>
+<script type="text/javascript" src="data/w.js"></script>
+<script type="text/javascript" src="data/yamunanagar.js"></script>
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="leaflet/leaflet.markercluster.js"></script>
+<script type="text/javascript" src="leaflet/Leaflet.GoogleMutant.js"></script>
+<script type="text/javascript" src="data/Districts.js"></script>
+<script type="text/javascript" src="data/amb.js"></script>
+<script type="text/javascript" src="data/AQ.js"></script>
+<script type="text/javascript" src="data/Block.js"></script>
+<script type="text/javascript" src="data/poll.js"></script>
+<script type="text/javascript" src="data/skt.js"></script>
+
+
+
+<!-- <!-- start sketch up model--> 
+<!-- Checkbox: <input type="checkbox" id="myCheck"  onclick="myFunction()"> -->
+
+<!-- <p id="text" style="display:none"><iframe src="https://3dwarehouse.sketchup.com/embed.html?mid=f1168092-7c73-4453-a519-ee178bc56452&width=580&height=326" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe></p> -->
+
+<!-- <script> -->
+<!-- function myFunction() { -->
+    <!-- var checkBox = document.getElementById("myCheck"); -->
+    <!-- var text = document.getElementById("text"); -->
+    <!-- if (checkBox.checked == true){ -->
+        <!-- text.style.display = "block"; -->
+    <!-- } else { -->
+       <!-- text.style.display = "none"; -->
+    <!-- } -->
+<!-- } -->
+<!-- </script> -->
+
+<!-- <!-- End sketch up model--> 
+
+
+
+
+ <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2cWsEuUMqEAmSJbPFEYJBcSBKMdrXFpw"></script>
+ <!-- <style> -->
+<!-- table, th, td { -->
+    <!-- border: .5px solid black; -->
+    <!-- border-collapse: collapse; -->
+    <!-- border color:#FFFFFF; -->
+<!-- } -->
+ <!-- </style> -->
+
+</head>
+<body>
+<div id="banner" class="x-hidden" height="auto">
+	<table width="100%">
+	<td>
+	<a title="Haryana State Pollution Control Board (HSPCB)" target="_blank" href="http://hspcb.gov.in">
+	<img alt="HSPCB" title="HSPCB" align="middle" height="75" width="75" src="images/hspcb.jpg" />
+	</a>
+	</td>
+	<td width="100%" height="auto" style="color:#800000; background:#096c00 url(images/forest1.jpg)">
+	<div align="center">
+	<h1 style="color:#FFFFFF";>Haryana State Pollution Control Board (HSPCB) </h1>
+	</div>
+	</td>
+	<td>
+	<a target="_blank" href="https://en.wikipedia.org/wiki/File:ConstellationGPS.gif">
+	<img alt="" title="GPS Constellation " align="middle" height="85" src="images/ConstellationGPS.gif" />
+	</td>
+	</tr>
+	</table>
+</div>
+<div id="help" class="x-hidden">
+	<h3>......Related to industry mapping ..............////// </h3>
+	<ul>
+	<li>.......................</li>
+	<li> Work in progress/////////// </li>
+	</ul>
+	<h3>Dummy</h3>
+	<ul>
+	<li>Dummy.</li>
+	</ul>
+	<!-- hitwebcounter Code START -->
+<!--<a href="http://www.hitwebcounter.com" target="_blank"> -->
+<!-- <img src="http://hitwebcounter.com/counter/counter.php?page=6906030&style=0001&nbdigits=5&type=page&initCount=0" title="" Alt=""   border="0" > -->
+<!-- </a>                                        <br/> -->
+                                        <!-- <!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com" title=""  -->
+                                        <!-- target="_blank" style="font-family: ;  -->
+                                        <!-- font-size: px; color: #; text-decoration:  ;"><>                                        </> -->
+                                        <!-- </a>    -->
+<!-- <button onclick="myFunction()">Print this page</button>                  -->
+<!-- <script> -->
+<!-- function myFunction() { -->
+    <!-- window.print(); -->
+<!-- } -->
+<!-- </script> -->
+<div align='Bottem'><h2>Visitor No.</h2><a href='http://www.hit-counter-html-code.com'><img src='http://hit-counter-html-code.com/wp-content/themes/customizr/hitcounter/c.php?d=9&id=162945&s=20' border='0' title='Web Design Orange County'></a><br / ><small><a href='http://www.hit-counter-html-code.com' title="Web Design Orange County"></a></small></div>
+</div>
+<!-- <div id="user<?=$user->id;?>" class="popup"> -->
+      <!-- <div class="details"> -->
+           <!-- User details... -->
+      <!-- </div> -->
+      <!-- <a href="#print">Print</a> -->
+ <!-- </div> -->
+
+<script language=JavaScript>
+
+
+
+//Disable right mouse click Script
+//By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
+//For full source code, visit http://www.dynamicdrive.com
+
+var message="Haryana State Pollution Control Board";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+
+</script>
+ <!-- <button onclick="myFunction()">Print this page</button>                   -->
+ <!-- <script>  -->
+ <!-- function myFunction() { -->
+ <!-- window.print();  -->
+<!-- }  -->
+ <!-- </script>  -->
+ </body>
+</html>
